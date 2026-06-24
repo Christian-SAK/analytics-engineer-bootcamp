@@ -45,6 +45,7 @@ Optionnel mais utile : un éditeur SQL (DBeaver, Snowflake Worksheets), VS Code 
 ```
 analytics-engineer-bootcamp/
 ├── README.md                 ← Vous êtes ici
+├── docs/GUIDE-GITHUB.md      ← Fork, clone, PR (apprenants)
 ├── PROGRESSION.md            ← Checklist jour par jour
 ├── semaine-01-sql/           ← SQL fondamental sur TPCH
 ├── semaine-02-snowflake-dbt/ ← Modélisation dbt + Snowflake
@@ -66,6 +67,14 @@ analytics-engineer-bootcamp/
 - Les exercices sont numérotés `ex-01`, `ex-02`, … avec un énoncé clair
 - Les corrigés ne sont **pas** dans ce dépôt (voir `solutions/`)
 - Chaque semaine se termine par des **livrables** et des **critères de validation** (voir `PROGRESSION.md`)
+
+## Workflow GitHub — rendre votre travail
+
+Pour soumettre vos exercices et livrables, vous travaillez sur **votre fork** du dépôt, puis ouvrez une **Pull Request** vers le dépôt principal. Aucune expérience Git avancée requise : le guide pas à pas couvre fork, clone, branches, commits et synchronisation avec upstream.
+
+→ **[Guide GitHub complet (fork, clone, PR)](docs/GUIDE-GITHUB.md)**
+
+En bref : **Fork** → **Clone votre fork** → **Branche** → **Commit** → **Push** → **Pull Request**.
 
 ## Démarrage rapide
 
