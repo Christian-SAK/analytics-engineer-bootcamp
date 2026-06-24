@@ -1,0 +1,6 @@
+# Fichier minimal — compléter avec docker-compose officiel Airflow si besoin
+# https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html
+#
+# Usage recommandé semaine 3 :
+#   curl -LfO https://airflow.apache.org/docs/apache-airflow/2.9.2/docker-compose.yaml
+#   docker compose up airflow-init && docker compose up -d

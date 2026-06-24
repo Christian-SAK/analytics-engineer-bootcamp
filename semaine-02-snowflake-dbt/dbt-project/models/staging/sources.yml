@@ -1,0 +1,67 @@
+version: 2
+
+sources:
+  - name: tpch
+    description: "Données benchmark TPC-H retail — Snowflake sample data"
+    database: "{{ var('tpch_database') }}"
+    schema: "{{ var('tpch_schema') }}"
+    tables:
+      - name: customer
+        description: "Clients"
+        columns:
+          - name: c_custkey
+            description: "Clé primaire client"
+          - name: c_name
+          - name: c_mktsegment
+            description: "Segment marketing (BUILDING, AUTOMOBILE, etc.)"
+          - name: c_acctbal
+            description: "Solde compte client"
+
+      - name: orders
+        description: "En-têtes de commande"
+        columns:
+          - name: o_orderkey
+            description: "Clé primaire commande"
+          - name: o_custkey
+            description: "FK vers customer"
+          - name: o_orderdate
+          - name: o_totalprice
+          - name: o_orderstatus
+
+      - name: lineitem
+        description: "Lignes de commande (grain le plus fin)"
+        columns:
+          - name: l_orderkey
+          - name: l_partkey
+          - name: l_suppkey
+          - name: l_quantity
+          - name: l_extendedprice
+          - name: l_discount
+
+      - name: part
+        description: "Catalogue articles"
+        columns:
+          - name: p_partkey
+          - name: p_name
+          - name: p_mfgr
+          - name: p_retailprice
+
+      - name: supplier
+        description: "Fournisseurs"
+        columns:
+          - name: s_suppkey
+          - name: s_name
+          - name: s_nationkey
+
+      - name: nation
+        description: "Pays"
+        columns:
+          - name: n_nationkey
+          - name: n_name
+          - name: n_regionkey
+
+      - name: region
+        description: "Régions géographiques"
+        columns:
+          - name: r_regionkey
+          - name: r_name

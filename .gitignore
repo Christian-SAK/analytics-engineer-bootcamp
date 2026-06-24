@@ -1,0 +1,45 @@
+# Environnements Python
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Secrets et credentials
+.env
+.env.*
+*.pem
+profiles.yml
+!profiles.yml.example
+**/profiles.yml
+!**/profiles.yml.example
+
+# dbt
+dbt_packages/
+target/
+logs/
+.user.yml
+
+# Airflow
+airflow/logs/
+airflow/airflow.db
+airflow/airflow.cfg
+airflow/webserver_config.py
+airflow/*.pid
+
+# IDE et OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Données locales (ne pas versionner de gros fichiers)
+*.csv
+*.parquet
+*.duckdb
+data/raw/
+data/processed/

@@ -1,0 +1,13 @@
+# Dossier mes-reponses
+
+Placez ici vos fichiers SQL :
+
+```
+mes-reponses/
+├── ex-01.sql
+├── ex-02.sql
+...
+└── ex-09-rapport.md
+```
+
+Ne commitez pas de credentials Snowflake.

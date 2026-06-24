@@ -1,0 +1,35 @@
+version: 2
+
+models:
+  - name: dim_customer
+    description: "Dimension client — grain : 1 ligne par client TPCH"
+    columns:
+      - name: customer_id
+        description: "Clé primaire"
+        tests:
+          - unique
+          - not_null
+      - name: market_segment
+        tests:
+          - not_null
+      - name: account_balance
+        description: "Solde compte en devise TPCH"
+
+  - name: fct_order_lines
+    description: "Faits commandes — grain : 1 ligne par lineitem"
+    columns:
+      - name: order_line_id
+        tests:
+          - unique
+          - not_null
+      - name: order_id
+        tests:
+          - not_null
+      - name: customer_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_customer')
+              field: customer_id
+      - name: net_revenue
+        description: "CA net après remise (extended_price * (1 - discount))"

@@ -1,0 +1,29 @@
+# Exemple de profil dbt — Snowflake
+# Copier vers ~/.dbt/profiles.yml et remplacer les placeholders
+# NE JAMAIS commiter de credentials réels
+
+ae_bootcamp:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: "<ORGNAME>-<ACCOUNT_NAME>"   # ex: xy12345.eu-west-1
+      user: "<VOTRE_USER>"
+      password: "<VOTRE_MOT_DE_PASSE>"
+      role: "<ROLE>"                        # ex: ACCOUNTADMIN ou AE_DEV
+      database: "<VOTRE_DATABASE>"          # ex: AE_BOOTCAMP ou SNOWFLAKE_SAMPLE_DATA
+      warehouse: "<VOTRE_WAREHOUSE>"        # ex: COMPUTE_WH
+      schema: "<VOTRE_SCHEMA_DEV>"          # ex: dbt_dev
+      threads: 4
+      client_session_keep_alive: false
+
+    prod:
+      type: snowflake
+      account: "<ORGNAME>-<ACCOUNT_NAME>"
+      user: "<VOTRE_USER>"
+      password: "<VOTRE_MOT_DE_PASSE>"
+      role: "<ROLE_PROD>"
+      database: "<VOTRE_DATABASE>"
+      warehouse: "<VOTRE_WAREHOUSE>"
+      schema: "<VOTRE_SCHEMA_PROD>"
+      threads: 8
