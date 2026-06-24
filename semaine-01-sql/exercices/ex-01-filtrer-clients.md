@@ -19,7 +19,7 @@ Vous analysez la base clients TPCH pour un rapport segmentation.
 - Utiliser `WHERE` (pas de filtre post-agrégation)
 - Résultat trié par solde décroissant, limité aux 20 premiers
 
-## Indice ESA
+## Indice
 
 Filtrer avant d'agréger = restreindre la population, comme exclure des outliers avant un `mean()` en R.
 

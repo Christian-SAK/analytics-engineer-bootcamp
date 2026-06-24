@@ -98,7 +98,7 @@ Termes du métier et de la stack, en français, avec équivalents anglais couran
 
 ---
 
-## Analogies ESA / stats
+## Analogies R / Python
 
 | SQL / AE | R / stats |
 |----------|-----------|

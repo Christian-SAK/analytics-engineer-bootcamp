@@ -36,7 +36,7 @@ UNION ALL SELECT 'LINEITEM', COUNT(*) FROM LINEITEM;
 - Ouvrir **Worksheets** (ou SQL client)
 - Concepts : `SELECT`, `FROM`, `WHERE`, `ORDER BY`, `LIMIT`
 - Types : VARCHAR, NUMBER, DATE
-- **Analogie ESA** : `SELECT col FROM table WHERE ...` ≈ `df %>% select(col) %>% filter(...)`
+- **Analogie R** : `SELECT col FROM table WHERE ...` ≈ `df %>% select(col) %>% filter(...)`
 
 **Exercices** : `exercices/ex-01-filtrer-clients.md`, `ex-02-tri-et-limites.md`
 
